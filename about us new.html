@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Finance Saarthi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #000;
+    }
+
+    section {
+      padding: 60px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .content {
+      max-width: 1200px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap; /* stacks content on smaller screens */
+    }
+
+    .text {
+      flex: 1 1 500px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .para-container {
+      display: flex;
+      flex-direction: column; /* paragraphs stacked vertically */
+      gap: 20px;
+      text-align: left;
+    }
+
+    .para-container p {
+      font-size: 1.1em;
+      line-height: 1.7;
+    }
+
+    .image {
+      flex: 1 1 400px;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* Responsive stacking */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <div class="content">
+      <!-- Text Left -->
+      <div class="text">
+        <h1>About Us</h1>
+        <div class="para-container">
+          <p>
+            Founded in 2016 and headquartered in Pitampura, Delhi, 
+            <strong>Finance Saarthi</strong> is a trusted partner in delivering end-to-end financial services. 
+            With a strong network of experienced professionals, we provide personalized strategies in 
+            taxation, compliance, investments, and business advisory, serving clients across India and worldwide.
+          </p>
+          <p>
+            At Finance Saarthi, our mission is to simplify finance and empower businesses as well as individuals 
+            to achieve sustainable growth. We combine deep domain expertise with modern digital tools to offer 
+            reliable, transparent, and data-driven solutions. Trusted by startups, SMEs, and global enterprises 
+            alike, we pride ourselves on building long-term relationships rooted in integrity, innovation, 
+            and measurable impact.
+          </p>
+        </div>
+      </div>
+
+      <!-- Image Right -->
+      <div class="image">
+        <img src="https://www.shutterstock.com/image-photo/portrait-successful-group-business-people-600nw-2085055825.jpg" alt="Corporate people standing together">
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
