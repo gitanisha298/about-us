@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Soseo Tech</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap');
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family:"Poppins", sans-serif;
+      background:#fff; color:#111; line-height:1.8;
+      overflow-x:hidden; position:relative;
+    }
+    h1,h2,h3 {font-family:"Bebas Neue", cursive; letter-spacing:2px;}
+    h1 {font-size:3.5rem; color:#111;}
+    h2 {font-size:2.5rem; color:#ffcc00;}
+    h3 {font-size:1.6rem; color:#ffcc00;}
+
+  
+    .shapes span {
+      position:absolute;
+      display:block;
+      background:#ffcc00;
+      opacity:0.08;
+      border-radius:50%;
+      animation:float 20s linear infinite;
+    }
+    .shapes span.square {
+      border-radius:0;
+      transform:rotate(45deg);
+    }
+    .shapes span:nth-child(1) {width:120px;height:120px;left:10%;top:15%;animation-duration:18s;}
+    .shapes span:nth-child(2) {width:80px;height:80px;left:70%;top:25%;animation-duration:25s;}
+    .shapes span:nth-child(3) {width:150px;height:150px;left:40%;top:70%;animation-duration:30s;}
+    .shapes span:nth-child(4) {width:90px;height:90px;left:85%;top:60%;animation-duration:20s;}
+    .shapes span:nth-child(5) {width:100px;height:100px;left:20%;top:80%;animation-duration:28s;}
+    .shapes span:nth-child(6) {width:140px;height:140px;left:60%;top:10%;animation-duration:22s;}
+    .shapes span:nth-child(7) {width:70px;height:70px;left:5%;top:60%;animation-duration:26s;}
+    .shapes span:nth-child(8) {width:110px;height:110px;left:50%;top:40%;animation-duration:24s;}
+
+    @keyframes float {
+      0% {transform:translateY(0) rotate(0deg);}
+      50% {transform:translateY(-40px) rotate(180deg);}
+      100% {transform:translateY(0) rotate(360deg);}
+    }
+
+    header {
+      background:#ffcc00; color:#111; text-align:center; padding:5rem 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      position:relative; z-index:2;
+    }
+    header h1 {animation:fadeInDown 1s;}
+    header p {margin-top:1rem; font-size:1.2rem; color:#333; animation:fadeInUp 1s;}
+
+    section {padding:4rem 1rem; position:relative; z-index:2;}
+    .container {max-width:1100px; margin:0 auto;}
+
+    @keyframes fadeInDown {from{opacity:0; transform:translateY(-40px);} to{opacity:1; transform:translateY(0);}}
+    @keyframes fadeInUp {from{opacity:0; transform:translateY(40px);} to{opacity:1; transform:translateY(0);}}
+    @keyframes fadeUp {from{opacity:0; transform:translateY(40px);} to{opacity:1; transform:translateY(0);}}
+
+    .fade {opacity:0; animation:fadeUp 1s forwards;}
+    .delay-1 {animation-delay:.3s;}
+    .delay-2 {animation-delay:.6s;}
+    .delay-3 {animation-delay:.9s;}
+
+    .card {
+      background:#fafafa; border:2px solid #ffcc00;
+      padding:2rem; border-radius:12px; margin-bottom:2rem;
+      transition:transform .3s, box-shadow .3s;
+    }
+    .card:hover {transform:translateY(-6px); box-shadow:0 0 20px rgba(255,204,0,.4);}
+
+    ul {list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:1rem;}
+    ul li {
+      background:#fff; padding:1rem 1.2rem; border-radius:8px;
+      font-weight:500; color:#111; border:1px solid #ddd;
+      transition:all .3s;
+    }
+    ul li:hover {background:#ffcc00; color:#111; border-color:#ffcc00;}
+
+    .timeline {margin-top:2rem; position:relative; padding-left:2rem;}
+    .timeline::before {
+      content:""; position:absolute; left:15px; top:0; bottom:0;
+      width:4px; background:#ffcc00;
+    }
+    .timeline div {margin-bottom:2rem; position:relative;}
+    .timeline div::before {
+      content:""; position:absolute; left:-5px; top:6px;
+      width:15px; height:15px; border-radius:50%;
+      background:#ffcc00; box-shadow:0 0 10px #ffcc00;
+    }
+
+    footer {
+      background:#111; color:#ffcc00; text-align:center;
+      padding:2rem; font-weight:500; margin-top:2rem;
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      position:relative; z-index:2;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="shapes">
+    <span></span>
+    <span class="square"></span>
+    <span></span>
+    <span class="square"></span>
+    <span></span>
+    <span></span>
+    <span class="square"></span>
+    <span></span>
+  </div>
+
+  <header>
+    <h1>About SOSEOTECH</h1>
+    <p>Innovative technology solutions, digital strategies & consulting services</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="container fade">
+        <h2>Who We Are</h2>
+        <div class="card">
+          <p>SOSEO-TECH ADVISORY LLP is a Limited Liability Partnership (LLP) governed by the LLP Act, 2008. Registered under the Registrar of Companies RoC-Delhi, it operates as a non-government entity. According to the Ministry of Corporate Affairs (MCA), this LLP was incorporated on 20-04-2025 and its records were last updated on 22-05-2025. Its eFiling status is currently listed as “Active” as per MCA records.</p>
+          <p>The firm is dedicated to delivering innovative technology solutions, digital transformation strategies, and consulting services that empower businesses to grow in today’s competitive environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade delay-1">
+        <h2>Legal Information</h2>
+        <div class="card">
+          <p><strong>CIN:</strong> AAZ-1234 | <strong>ROC:</strong> Delhi</p>
+          <p><strong>Date of Incorporation:</strong> 20th April 2025</p>
+          <p><strong>Last Updated:</strong> 22nd May 2025</p>
+          <p><strong>Status:</strong> Active</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade delay-2">
+        <h2>Our Mission</h2>
+        <div class="card">
+          <p>To empower businesses with cutting-edge digital solutions that drive growth, efficiency, and transformation. We combine engineering expertise, marketing strategies, and business consulting into one seamless service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade delay-3">
+        <h2>Our Vision</h2>
+        <div class="card">
+          <p>To become a global leader in providing digital transformation services, enabling startups, enterprises, and organizations to thrive in an increasingly competitive world.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade">
+        <h2>Core Values</h2>
+        <ul>
+          <li>Integrity & Transparency</li>
+          <li>Innovation & Excellence</li>
+          <li>Customer Centricity</li>
+          <li>Collaboration & Growth</li>
+          <li>Sustainability & Responsibility</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade delay-1">
+        <h2>Our Capabilities</h2>
+        <div class="card">
+          <p>We specialize in custom software development, web and mobile applications, cloud solutions, marketing services, finance & accounting, and business consulting.</p>
+          <p>Our team blends technology with creativity to deliver practical, scalable, and future-ready solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container fade delay-2">
+        <h2>Our Journey</h2>
+        <div class="timeline">
+          <div>
+            <h3>2025 – Company Founded</h3>
+            <p>SOSEOTECH was established to provide innovative technology advisory and development services.</p>
+          </div>
+          <div>
+            <h3>2026 – Expansion</h3>
+            <p>Expanded into cloud, marketing, and financial consulting services.</p>
+          </div>
+          <div>
+            <h3>2027 – Global Reach</h3>
+            <p>Established partnerships with global enterprises and startups alike.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Soseo Tech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
